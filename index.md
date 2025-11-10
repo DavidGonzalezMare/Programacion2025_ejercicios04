@@ -79,7 +79,7 @@ Realizar un subprograma que **intercambie el valor** de 2 variables enteras. Hac
 
 La cabecera de la función será:
 ```csharp
-void Intercambiar(ref int num1, ref int num2);
+void Intercambiar(ref int num1, ref int num2)
 ```
 
 ## Ejercicio 7. Devolver con out
@@ -109,7 +109,7 @@ static int LeerEntero(string mensaje)
 
     do
     {
-        Console.Write("Introduzca un número entero: ");
+        Console.Write(mensaje);
         // Si lo que leemos no es un entero devuelve false
         correcto = int.TryParse(Console.ReadLine(), out num);
 
